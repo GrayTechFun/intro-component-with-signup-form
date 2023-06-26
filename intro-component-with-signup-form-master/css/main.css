@@ -9,5 +9,156 @@ html {
 }
 
 .container {
-  background: #fc655c;
+  background: #ec6c72;
+  width: 35em;
+  height: 100vh;
+  background-image: url(../images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  visibility: hidden;
+  width: 1em;
+}
+
+h1 {
+  color: white;
+  margin-left: 2.4em;
+  font-size: 3rem;
+  margin-top: 2em;
+  margin-bottom: 0.4em;
+}
+
+.content p {
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 1.5em;
+  margin-bottom: 4em;
+}
+
+button {
+  background-color: #4b3f92;
+  color: white;
+  width: 20em;
+  height: 4.5em;
+  border-radius: 0.5em;
+  padding: auto;
+  padding-left: 4em;
+  padding-right: 4em;
+  border-style: none;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+span {
+  font-weight: normal;
+}
+
+.white {
+  background-color: white;
+  border-radius: 0.5em;
+  height: 32em;
+}
+
+.square {
+  width: 23em;
+  height: 4em;
+  border: 1px solid #e4e4e4;
+  display: inline-block;
+  border-radius: 0.5em;
+  color: #88868b;
+  padding-left: 1.5em;
+  padding-top: 1.2em;
+  margin-left: 2em;
+  font-weight: bold;
+}
+
+.square:nth-child(1) {
+  margin-top: 2em;
+}
+
+.square-trial {
+  background-color: #32c577;
+  display: inline-block;
+  color: white;
+  width: 23em;
+  height: 4em;
+  border-radius: 0.5em;
+  margin-left: 2em;
+  font-weight: bold;
+  padding-left: 5em;
+  padding-top: 1.2em;
+}
+
+.square-trial:hover {
+  cursor: pointer;
+  background-color: #69dea5;
+}
+
+.click {
+  color: #bebcc7;
+  margin-top: 1.2em;
+  display: flex;
+  margin-left: 4em;
+}
+
+.white span {
+  color: #ec6c72;
+  font-weight: bold;
+  margin-left: -13em;
+}
+
+.er-message {
+  visibility: hidden;
+}
+
+.term {
+  margin-top: 2em;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    width: auto;
+    height: 50em;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10em;
+    background-image: url(../images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+  }
+
+  .content p {
+    margin-left: 5em;
+  }
+
+  .data {
+    margin-right: 10em;
+  }
+
+  button {
+    width: 30em;
+    height: 3.5em;
+  }
+
+  .square {
+    width: 35em;
+  }
+  .square-trial {
+    width: 35em;
+    padding-left: 11em;
+  }
+  .click {
+    margin-left: 6em;
+  }
+
+  .white span {
+    margin-top: 0.05em;
+    margin-left: 0.5em;
+  }
 }
